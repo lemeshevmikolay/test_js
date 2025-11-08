@@ -1,6 +1,6 @@
 //цикл виводу від 5 до 1
 
-for (let i = 5; i > 0; i--) {
+for (let i = 3; i > 0; i--) {
   console.log("Running in Node.js. Result:", i);
 }
 
@@ -43,7 +43,7 @@ function return_suma_min_max_log(min, max) {
 
 return_suma_min_max_log (6,7)
 
-
+//result
 /*
 
 Напиши функцію runningSum, яка приймає масив чисел
@@ -80,5 +80,43 @@ Output: [-7, -1, 1, 3, 4]
 Explanation: Також приймаються ці масиви [-5, -1, 1, 2, 3], [-3, -1, 2, -2, 4].
 */
 
-const randomNumbers = Array.from({ length: 5 }, () => getRandomNumber(1, 100));
+function random_0(n) {
+  function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
 
+  const randomNumbers = Array.from({ length: n-1 }, () => getRandomNumber(1, 100));
+
+  let sum = 0;
+  let diff = 0;
+  for (let i = 0; i < randomNumbers.length; i++) {
+    sum = sum + randomNumbers[i];
+  }
+
+  diff =-sum;
+
+  randomNumbers.push(diff);
+
+  console.log(randomNumbers);
+}
+
+random_0(6);
+
+
+
+function sumZero(n) {
+  const result = [];
+
+  if (n % 2 !== 0) {
+    result.push(0);
+  }
+
+  for (let i = 1; result.length < n; i++) {
+    result.push(i, -i);
+  }
+
+  console.log(result);
+}
+
+
+sumZero(6)
