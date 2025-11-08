@@ -78,7 +78,7 @@ runningSum([1, 2, 3, 4, 5]);
 Input: n = 5
 Output: [-7, -1, 1, 3, 4]
 Explanation: Також приймаються ці масиви [-5, -1, 1, 2, 3], [-3, -1, 2, -2, 4].
+*/
 
- */
-
+const randomNumbers = Array.from({ length: 5 }, () => getRandomNumber(1, 100));
 
