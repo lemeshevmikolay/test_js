@@ -42,8 +42,6 @@ function return_suma_min_max_log(min, max) {
 }
 
 return_suma_min_max_log (6,7)
-
-//result
 /*
 
 Напиши функцію runningSum, яка приймає масив чисел
