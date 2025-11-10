@@ -117,6 +117,4 @@ function sumZero(n) {
 }
 
 
-sumZero(7)
-
-//test 1 2 3
+sumZero(5)
